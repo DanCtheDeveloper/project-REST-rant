@@ -11,6 +11,7 @@ function Def (html) {
             <body>
                 {html.children}
             </body>
+            <footer>Footer Content & Links:</footer>
         </html>
     )
 }
