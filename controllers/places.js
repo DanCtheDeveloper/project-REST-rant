@@ -31,7 +31,7 @@ router.get('/:id/edit', (req, res) => {
       res.render('error404')
   }
   else {
-    res.render('places/edit', { place: places[id] })
+    res.render('places/edit', {place: places[id]})
   }
 })
 
@@ -42,7 +42,7 @@ router.get('/', (req, res) => {
 })
 
 //Show/ID/Edit button
-router.get('/:id', (req, res)=>{
+router.put('/:id', (req, res)=>{
   let id = Number(req.params.id)
   if (isNaN(id)) {
     res.render('error404')
@@ -51,7 +51,16 @@ router.get('/:id', (req, res)=>{
     res.render('error404')
   }
   else {
-  res.render('places/show', { place: places[id], id })
+    if (!req.body.pic) {
+      req.body.pic = 'http://placekitten.com/400/400'
+    }
+    if (!req.body.city){
+      req.body.city = 'Anytown'
+    }
+    if (!req.body.state) {
+      req.body.state = 'USA'
+    }
+  res.redirect(`/places/${id}`)
   }
 })
 
