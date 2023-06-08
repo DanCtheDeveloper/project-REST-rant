@@ -20,11 +20,11 @@ function show (data) {
                 <p>No Comments Yet!</p>
             </div>
             <a href={`/places/${data.id}/edit`} className='btn btn-warning'>
-                Edit
+            <i className="bi bi-pencil"></i> Edit
             </a>
             <form method="POST" action={`/places/${data.place.id}?_method=DELETE`}>
                 <button type="submit" className='btn btn-danger'>
-                    Delete
+                <i className="bi bi-trash"></i> Delete
                 </button>
             </form>
           </main>

@@ -25,7 +25,7 @@ router.post('/', (req, res) => {
   res.redirect('/places')
 })
 
-//Click link/edit rest-rant
+//Click link/EDIT
 router.get('/:id/edit', (req, res) => {
   let id = Number(req.params.id)
   if (isNaN(id)) {
