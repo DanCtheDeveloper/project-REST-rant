@@ -2,7 +2,7 @@ const React = require('react')
 const Def = require('../default')
 
 function show (data) {
-    console.log("Show",data)
+    // console.log("Show",data)
     return (
         <Def>
           <main>
