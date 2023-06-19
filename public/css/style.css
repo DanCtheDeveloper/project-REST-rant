@@ -52,3 +52,7 @@ nav a:hover {
     color: pink;
     text-decoration: none;
 }
+
+.reviewForm {
+    margin-bottom: 5em;
+}
