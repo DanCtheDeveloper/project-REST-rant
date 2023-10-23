@@ -1,4 +1,4 @@
-/* h1 {
+h1 {
     text-align: center;
     color: cornflowerblue;
 }
@@ -29,31 +29,6 @@ footer {
     background-color: rgb(128, 111, 145);
 }
 
-nav {
-    background-color: cornflowerblue;
-    padding: 10px;
-    margin-bottom: 1em;
-}
-
-nav ul {
-    list-style-type: none;
-    margin: 0;
-}
-
-nav li {
-    display: inline;
-    margin-right: 25px;
-}
-
-nav a {
-    color: white;
-    font-size: 1.5em;
-}
-
-nav a:hover {
-    color: pink;
-    text-decoration: none;
-}
 
 .reviewForm {
     margin-bottom: 5em;
@@ -63,4 +38,4 @@ nav a:hover {
 
 .border {
     margin: 1em;
-} */
+}
